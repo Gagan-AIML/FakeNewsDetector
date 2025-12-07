@@ -5,7 +5,7 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.text import tokenizer_from_json
 
 # Load model
-model = load_model("fake_news_model.h5")
+model = load_model("fake_news_model (1).keras")
 
 # Load tokenizer
 with open("tokenizer.json") as f:
@@ -18,3 +18,4 @@ def predict_fake_news(text):
     padded = pad_sequences(seq, maxlen=200)
     prediction = model.predict(padded)[0][0]
     return "Real" if prediction >= 0.5 else "Fake"
+
