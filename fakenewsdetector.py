@@ -10,7 +10,7 @@ import spacy
 
 
 # 1. Data Loading & Preprocessing
-df = pd.read_csv('/content/Fake_Real_Data.csv')
+df = pd.read_csv("Fake_Real_Data.csv")
 
 # Check basic dataset info
 print("Dataset shape:", df.shape)
