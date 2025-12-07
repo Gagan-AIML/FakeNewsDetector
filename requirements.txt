@@ -2,9 +2,4 @@ pandas
 numpy
 tensorflow
 scikit-learn
-Tokenizer
-pad_sequences
-Sequential
-Embedding
 spacy
-
